@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script   src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="jumbotron">
+  <div class="container">
+  <h1>Things to do</h1><hr>
+  <div class="top">
+    <label><span>Description</span></label>
+    <input type="text" class="description">
+    <label><span>Due date</span></label>
+    <input type="date" name="date" id="duedate">
+    <button class="btn btn-info addTodo">Add</button>
+  </div>
+  
+  <hr>
+  <div class="panel panel-info">
+  <!-- Default panel contents -->
+  <div class="panel-heading paHead">
+    <div class="editArea">
+      <label>Edit Description:</label>
+      <input type="text" class="editDesc">
+      <button class="btn btn-success save">Save</button>
+      <button class="btn btn-primary cancel">Cancel</button>
+    </div>
+  </div>
+  <div class="panel-body">
+    
+    <table class="table todo">
+    <thead>
+      <tr class="tbHeader">
+        <th>Things to do</th>
+        <th>Date</th>
+        <th>Done?</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+      </thead>
+
+      <tbody class='tskList'>
+      </tbody>
+      
+    </table>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+    <table class="hidden">
+      <tbody>
+      <tr class="tskRow template">
+        <td class="desc"></td>
+        <td class="date"></td>
+        <td class="isComplete">
+          <input type="checkbox" class="isCompl" value="false">
+        </td>
+        <td class="editOption">
+          <button class="btn btn-warning edit">Edit</button>
+        </td>
+        <td class="deleteOption">
+          <button class="btn btn-danger delete">Delete</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.todo{
+  border: 2px solid #eee;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+}
+.tbHeader th{
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+h1{
+  font-weight: 50;
+  font-size: 50px;
+}
+.hidden{
+  display: none;
+}
+.description{
+  width: 500px;
+  height: 40px;
+}
+.lineThrough{
+  text-decoration: line-through;
+}
+.date{
+  width: 300px;
+  height: 40px;
+}
+.editArea{
+  display: none;
+
+}
+
+.editArea .editDesc{
+  width: 300px;
+  height: 40px;
+}
+.paHead{
+  font-size: 20px;
+  font-weight: 150;
+  color: #cfcfcf;
+}
+.top{
+  padding-left: 20px;
+  font-size: 22px;
+  color: #555;
+}
