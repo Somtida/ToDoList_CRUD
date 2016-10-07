@@ -1,3 +1,7 @@
+body {
+  background-color: skyblue;
+  min-height: 100%;
+}
 .todo{
   border: 2px solid #eee;
   text-align: center;
@@ -22,6 +26,10 @@ h1{
 }
 .lineThrough{
   text-decoration: line-through;
+  color: red;
+}
+.tskList{
+  color: blue;
 }
 .date{
   width: 300px;
