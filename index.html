@@ -10,48 +10,52 @@
 </head>
 <body>
   <div class="jumbotron">
-  <div class="container">
-  <h1>Things to do</h1><hr>
-  <div class="top">
-    <label><span>Description</span></label>
-    <input type="text" class="description">
-    <label><span>Due date</span></label>
-    <input type="date" name="date" id="duedate">
-    <button class="btn btn-info addTodo">Add</button>
-  </div>
-  
-  <hr>
-  <div class="panel panel-info">
-  <!-- Default panel contents -->
-  <div class="panel-heading paHead">
-    <div class="editArea">
-      <label>Edit Description:</label>
-      <input type="text" class="editDesc">
-      <button class="btn btn-success save">Save</button>
-      <button class="btn btn-primary cancel">Cancel</button>
-    </div>
-  </div>
-  <div class="panel-body">
-    
-    <table class="table todo">
-    <thead>
-      <tr class="tbHeader">
-        <th>Things to do</th>
-        <th>Date</th>
-        <th>Done?</th>
-        <th>Edit</th>
-        <th>Delete</th>
-      </tr>
-      </thead>
+    <div class="container">
+      <header>
+        <h1 class="text-center topic">THINGS2DO</h1>
+      </header>
+      <section class="top">
+        <label><span>Description</span></label>
+        <input type="text" class="description">
+        <label><span>Due date</span></label>
+        <input type="date" name="date" id="duedate">
+        <button class="btn btn-info addTodo">Add</button>
+      </section>
 
-      <tbody class='tskList'>
-      <!-- add  -->
-      </tbody>
-      
-    </table>
-  </div>
-  </div>
-  </div>
+      <hr />
+      <section class="panel panel-info">
+      <!-- Default panel contents -->
+        <div class="panel-heading paHead">
+          <div class="editArea">
+            <div class="row">
+              <label class="col-xs-2 col-md-2 col-lg-2">Edit Description:</label>
+              <input type="text" class="col-xs-8 col-md-8 col-lg-8 editDesc">
+              <button class="btn btn-success col-xs-1 col-md-1 col-lg-1 save">Save</button>
+              <button class="btn btn-primary col-xs-1 col-md-1 col-lg-1 cancel">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body">
+
+          <table class="table todo">
+          <thead>
+            <tr class="tbHeader">
+              <th>Things to do</th>
+              <th>Date</th>
+              <th>Done?</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+            </thead>
+
+            <tbody class='tskList text-center'>
+            <!-- add  -->
+            </tbody>
+
+          </table>
+        </div>
+      </section>
+    </div>
   <table class="hidden">
       <tbody>
       <tr class="tskRow template">
@@ -71,6 +75,6 @@
     </table>
   </div>
   </div>
-    
+
 </body>
 </html>

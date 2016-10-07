@@ -1,6 +1,15 @@
+@font-face{
+  src : url('Rachelhand.ttf');
+  font-family: Rachelhand;
+}
 body {
-  background-color: skyblue;
+  background-color: #33ffff;
   min-height: 100%;
+  background-color: skyblue; /* For browsers that do not support gradients */
+    background-color: -webkit-linear-gradient(skyblue, #33ffff); /* For Safari 5.1 to 6.0 */
+    background-color: -o-linear-gradient(skyblue, #33ffff); /* For Opera 11.1 to 12.0 */
+    background-color: -moz-linear-gradient(skyblue, #33ffff); /* For Firefox 3.6 to 15 */
+    background-color: linear-gradient(skyblue, #33ffff); /* Standard syntax */
 }
 .todo{
   border: 2px solid #eee;
@@ -11,11 +20,23 @@ body {
 .tbHeader th{
   text-align: center;
   padding: 5px;
-  font-size: 20px;
+  font-family: Rachelhand;
+  font-size: 1.7em;
+  color: skyblue;
 }
 h1{
   font-weight: 50;
   font-size: 50px;
+}
+.jumbotron {
+  padding-top: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px 4px #e6ffff;
+}
+.jumbotron .topic {
+  font-family: Rachelhand;
+  color: #8000ff;
+  font-size: 11em;
 }
 .hidden{
   display: none;
@@ -29,7 +50,11 @@ h1{
   color: red;
 }
 .tskList{
-  color: blue;
+  color: #8000ff;
+}
+.tskRow {
+  font-size: 1.2em;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 .date{
   width: 300px;
@@ -37,20 +62,23 @@ h1{
 }
 .editArea{
   display: none;
-
 }
-
+.save .cancel {
+  margin: 5px;
+}
 .editArea .editDesc{
-  width: 300px;
+  /*width: 100%;*/
   height: 40px;
 }
 .paHead{
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 150;
   color: #cfcfcf;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 .top{
-  padding-left: 20px;
+  padding-left: 1.5em;
   font-size: 22px;
   color: #555;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
